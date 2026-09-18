@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Lý Vé Máy Bay Giá Rẻ 24/7 - Săn Vé Nhanh, Uy Tín Hàng Đầu</title>
+    <meta name="description" content="Hệ thống đặt vé máy bay giá rẻ nội địa và quốc tế. So sánh giá tốt nhất, cập nhật khuyến mãi liên tục. Hỗ trợ tư vấn chuyên nghiệp 24/7 qua Zalo và Hotline 0979245250.">
+    <meta name="keywords" content="vé máy bay giá rẻ, săn vé máy bay, đại lý vé máy bay, đặt vé online">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph SEO Tags -->
+    <meta property="og:title" content="Đại Lý Vé Máy Bay Giá Rẻ 24/7 - Săn Vé Nhanh, Uy Tín Hàng Đầu">
+    <meta property="og:description" content="Hệ thống đặt vé máy bay giá rẻ nội địa và quốc tế. So sánh giá tốt nhất, cập nhật khuyến mãi liên tục.">
+    <meta property="og:type" content="website">
+    
+    <link rel="canonical" href="index.html">
+
+    <style>
+        :root {
+            --primary: #0284c7;
+            --accent: #2563eb;
+            --dark: #0f172a;
+            --gray: #475569;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background-color: #f1f5f9; color: #1e293b; line-height: 1.7; }
+        
+        .site-nav { 
+            background: var(--dark); 
+            padding: 12px 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+        }
+        .logo { color: #38bdf8; font-weight: 800; font-size: 1.2rem; text-decoration: none; padding: 8px 0; }
+        
+        .nav-links { display: flex; gap: 8px; }
+        .nav-links a { 
+            color: #94a3b8; 
+            text-decoration: none; 
+            padding: 10px 14px; 
+            border-radius: 6px; 
+            font-weight: 600; 
+            font-size: 0.95rem; 
+            transition: color 0.2s, background 0.2s; 
+        }
+        .nav-links a:hover, .nav-links a.active { color: #38bdf8; background: rgba(255,255,255,0.05); }
+
+        header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%); color: white; padding: 90px 20px; text-align: center; }
+        header h1 { font-size: 2.8rem; margin-bottom: 20px; font-weight: 800; letter-spacing: -0.5px; }
+        header p { font-size: 1.2rem; color: #e0f2fe; max-width: 750px; margin: 0 auto 30px auto; }
+        
+        .search-box-simulated {
+            background: white; max-width: 800px; margin: 0 auto; padding: 20px; border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) 140px; gap: 12px; align-items: center;
+        }
+        .search-input-group { text-align: left; }
+        .search-input-group label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--gray); margin-bottom: 5px; text-transform: uppercase; }
+        .search-input-group input { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.95rem; outline: none; }
+        .search-btn { background: var(--accent); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 700; cursor: pointer; height: 100%; transition: background 0.2s; }
+        .search-btn:hover { background: #1d4ed8; }
+
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        section { background: white; padding: 50px; margin-bottom: 40px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); border: 1px solid var(--border); }
+        h2 { color: var(--dark); margin-bottom: 25px; font-size: 1.8rem; font-weight: 800; border-left: 6px solid var(--accent); padding-left: 15px; }
+        
+        .flight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .flight-card { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: white; text-decoration: none; display: block; color: inherit; transition: transform 0.3s; }
+        .flight-card:hover { transform: translateY(-5px); }
+        
+        .flight-img-container { width: 100%; height: 180px; background: #cbd5e1; position: relative; }
+        .flight-img-container svg { width: 100%; height: 100%; display: block; }
+        
+        .flight-info { padding: 20px; }
+        .flight-title { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+        .flight-price { color: #dc2626; font-weight: 800; font-size: 1.1rem; }
+
+        .blog-preview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .blog-preview-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+        .blog-preview-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--dark); }
+        .blog-preview-card a { color: var(--accent); font-weight: 600; text-decoration: none; display: inline-block; margin-top: 10px; padding: 6px 0; }
+
+        .cta-box { background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); text-align: center; border: 2px dashed var(--accent); }
+        .btn-group { margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn-call { background: var(--accent); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+        .btn-zalo { background: #0068ff; color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; }
+
+        footer { text-align: center; padding: 40px; color: var(--gray); background: #e2e8f0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="logo">✈️ BAYVIET 247</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Trang Chủ</a>
+            <a href="blog.html">Cẩm Nang / Blog</a>
+            <a href="#lien-he">Liên Hệ</a>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Săn Vé Máy Bay Giá Rẻ - Khám Phá Thế Giới</h1>
+            <p>Hệ thống đặt vé uy tín, so sánh giá vé nhanh chóng từ hàng trăm hãng hàng không.</p>
+            <div class="search-box-simulated">
+                <div class="search-input-group">
+                    <label for="diem-di">Điểm đi</label>
+                    <input type="text" id="diem-di" value="TP. Hồ Chí Minh (SGN)">
+                </div>
+                <div class="search-input-group">
+                    <label for="diem-den">Điểm đến</label>
+                    <input type="text" id="diem-den" value="Hà Nội (HAN)">
+                </div>
+                <div class="search-input-group">
+                    <label for="ngay-bay">Ngày bay</label>
+                    <input type="date" id="ngay-bay" value="2026-04-01">
+                </div>
+                <button class="search-btn" onclick="alert('Đang kết nối hệ thống tra cứu...')">Tìm Vé Ngay</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <section>
+                <h2>Chặng Bay Phổ Biến & Giá Tốt Nhất</h2>
+                <div class="flight-grid">
+                    <a href="#" class="flight-card">
+                        <div class="flight-img-container">
+                            <svg viewBox="0 0 300 180" aria-label="Vé máy bay TP.HCM đi Hà Nội giá rẻ" role="img">
+                                <rect width="300" height="180" fill="#cbd5e1"></rect>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#475569">Vé máy bay TP.HCM đi Hà Nội</text>
+                            </svg>
+                        </div>
+                        <div class="flight-info">
+                            <div class="flight-title">TP.HCM ➔ HÀ NỘI</div>
+                            <p style="font-size:0.9rem; color:var(--gray); margin-bottom:8px;">Khám phá thủ đô văn hiến.</p>
+                            <div class="flight-price">Chỉ từ 890.000đ</div>
+                        </div>
+                    </a>
+                    <a href="#" class="flight-card">
+                        <div class="flight-img-container">
+                            <svg viewBox="0 0 300 180" aria-label="Vé máy bay TP.HCM đi Đà Nẵng" role="img">
+                                <rect width="300" height="180" fill="#cbd5e1"></rect>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#475569">Vé máy bay TP.HCM đi Đà Nẵng</text>
+                            </svg>
+                        </div>
+                        <div class="flight-info">
+                            <div class="flight-title">TP.HCM ➔ ĐÀ NẴNG</div>
+                            <p style="font-size:0.9rem; color:var(--gray); margin-bottom:8px;">Thành phố biển tuyệt đẹp.</p>
+                            <div class="flight-price">Chỉ từ 590.000đ</div>
+                        </div>
+                    </a>
+                    <a href="#" class="flight-card">
+                        <div class="flight-img-container">
+                            <svg viewBox="0 0 300 180" aria-label="Chuyến bay quốc tế ưu đãi lớn" role="img">
+                                <rect width="300" height="180" fill="#cbd5e1"></rect>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#475569">Chuyến bay quốc tế</text>
+                            </svg>
+                        </div>
+                        <div class="flight-info">
+                            <div class="flight-title">CHUYẾN BAY QUỐC TẾ</div>
+                            <p style="font-size:0.9rem; color:var(--gray); margin-bottom:8px;">Ưu đãi đi Hàn, Nhật, Thái.</p>
+                            <div class="flight-price">Giảm đến 30%</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Cẩm Nang & Kinh Nghiệm Săn Vé</h2>
+                <p style="margin-bottom: 25px;">Cập nhật những mẹo vặt và thông tin hàng không hữu ích giúp bạn tiết kiệm chi phí tối đa.</p>
+                <div class="blog-preview-grid">
+                    <div class="blog-preview-card">
+                        <h3>Kinh nghiệm săn vé máy bay 0 đồng mùa cao điểm không phải ai cũng biết</h3>
+                        <p style="font-size:0.9rem; color:var(--gray);">Tổng hợp khung giờ vàng và mẹo thao tác cực nhanh...</p>
+                        <a href="bai-viet-1.html">Đọc tiếp →</a>
+                    </div>
+                    <div class="blog-preview-card">
+                        <h3>Quy định hành lý ký gửi và xách tay của các hãng hàng không mới nhất</h3>
+                        <p style="font-size:0.9rem; color:var(--gray);">Tránh việc bị phạt quá cước tại sân bay...</p>
+                        <a href="blog.html">Xem tất cả bài viết →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lien-he" class="cta-box">
+                <h2>Cần Hỗ Trợ Đặt Vé Gấp?</h2>
+                <p>Đội ngũ tư vấn viên luôn túc trực 24/7 để hỗ trợ giữ chỗ và giải đáp thắc mắc cho bạn.</p>
+                <div class="btn-group">
+                    <a href="tel:0979245250" class="btn-call">📞 Hotline: 0979245250</a>
+                    <a href="https://zalo.me/0979245250" target="_blank" class="btn-zalo">💬 Chat Zalo Trực Tuyến</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BAYVIET 247. All rights reserved. Thiết kế chuẩn SEO.</p>
+    </footer>
+</body>
+</html>
